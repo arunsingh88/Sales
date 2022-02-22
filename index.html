@@ -1,0 +1,38 @@
+<html>
+<!-- In <head> add scripts and styles to your html page -->
+<head>
+<script src="https://chat.pepsico-staging.onereach.ai/lib/richWebChat.umd.min.js"></script>
+<link rel="stylesheet" href="https://chat.pepsico-staging.onereach.ai/lib/richWebChat.css"/>  
+</head>
+<body>
+<div id="rwc"></div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var RWC = richWebChat.default
+    var app = new RWC({
+      container: '#rwc', // DOM element selector where chat will be inserted
+      chatUrl: 'https://chat.pepsico-staging.onereach.ai/ohogtIArTMmgUwclwZHt4A/0hwj47v', // url of your chat. required
+      autoExpandDelay: 15000,
+      position: 'bottom-right',
+      inviteMessage: "",
+      inviteButton: "",
+      inviteImage: undefined,
+      showCloseIcon: false,
+      inviteTimeout: 5000,
+      allowChangeChatWindowSize: false,
+      allowDrag: false,
+      widgetColor: '#409fec',
+      allowStartNewConversation: true,
+      thumbLogo: undefined,
+      animation: 'pulse', // 'pulse', 'ring', 'zoom',
+      appearance: {
+        blurredBackground: false
+      },
+      pageData: {
+        fname: 'foo'
+      }
+    })
+  });
+</script>
+</body>
+</html>
