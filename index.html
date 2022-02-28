@@ -4,7 +4,11 @@
 <script src="https://chat.pepsico-staging.onereach.ai/lib/richWebChat.umd.min.js"></script>
 <link rel="stylesheet" href="https://chat.pepsico-staging.onereach.ai/lib/richWebChat.css"/>  
 </head>
-<body style="background-image: url('assets/pepsico_bg.png');">
+<body style="background-image: url(assets/pepsico_bg.png);
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;">
 <div id="rwc"></div>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -19,7 +23,7 @@
       inviteImage: undefined,
       showCloseIcon: false,
       inviteTimeout: 5000,
-      allowChangeChatWindowSize: false,
+      allowChangeChatWindowSize: true,
       allowDrag: false,
       widgetColor: '#409fec',
       allowStartNewConversation: true,
